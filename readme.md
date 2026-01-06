@@ -11,15 +11,17 @@ Sistema desenvolvido em **Python** e **Django** para o gerenciamento de ativos p
 - **Data Seeder:** Script automatizado para povoar o banco de dados com dados fictícios para testes.
 - **Painel Administrativo:** Gestão de Categorias e Localizações via Django Admin.
 
-`![Tela Inicial](screenshots/tela_index.png)`
-`![Tela Formulario](screenshots/tela_cadastro.png)`
-`![Tela Exclusão](screenshots/tela_exclusao.png)`
+![Tela Inicial](screenshots/tela_index.png)
+
+![Tela Formulario](screenshots/tela_cadastro.png)
+
+![Tela Exclusão](screenshots/tela_exclusao.png)
 
 ## Tecnologias Utilizadas
 
 - **Backend:** Python 3.10+, Django 5.x
 - **Frontend:** HTML5, CSS3, Bootstrap 5 (CDN)
-- **Banco de Dados:** SQLite (padrão do Django, ideal para MVPs)
+- **Banco de Dados:** SQLite
 
 ## Como Rodar o Projeto Localmente
 
