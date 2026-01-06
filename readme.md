@@ -13,13 +13,13 @@ Sistema desenvolvido em **Python** e **Django** para o gerenciamento de ativos p
 
 ### Galeria do Projeto
 
-| Tela Inicial | Formulário de Cadastro |
-| :---: | :---: |
-| ![Home](screenshots/tela_index.png) | ![Cadastro](screenshots/tela_cadastro.png) |
-
-| Confirmação de Exclusão | 
+| Tela Inicial | 
 | :---: | 
-| ![Exclusão](screenshots/tela_exclusao.png) |
+| ![Home](screenshots/tela_index.png) | 
+| Formulário de Cadastro | Confirmação de Exclusão | 
+| :---: | :---: |
+| ![Exclusão](screenshots/tela_exclusao.png) | ![Cadastro](screenshots/tela_cadastro.png) |
+
 
 ## Tecnologias Utilizadas
 
