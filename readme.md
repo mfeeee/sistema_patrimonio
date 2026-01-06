@@ -36,6 +36,8 @@ erDiagram
         string username
         string password
         string email
+        boolean is_staff "Acesso ao Admin?"
+        boolean is_superuser "Permissao Total?"
     }
     Categoria {
         int id PK

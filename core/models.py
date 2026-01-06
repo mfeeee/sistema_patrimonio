@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 class Categoria(models.Model):
@@ -30,5 +31,10 @@ class Patrimonio(models.Model):
     estado = models.CharField(max_length=20, choices=ESTADO_CHOICES, default='bom')
     observacao = models.TextField(blank=True, null=True)
 
+    categoria = models.ForeignKey(Categoria, on_delete=models.SET_NULL, null=True)
+    localizacao = models.ForeignKey(Localizacao, on_delete=models.SET_NULL, null=True)
+    
+    usuario_cadastro = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
+    
     def __str__(self):
         return f"{self.numero_tombamento} - {self.nome}"
