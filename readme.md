@@ -29,6 +29,7 @@ Sistema desenvolvido em **Python** e **Django** para o gerenciamento de ativos p
 - **Banco de Dados:** SQLite
 
 ## DER
+```mermaid
 erDiagram
     User {
         int id PK
@@ -36,18 +37,15 @@ erDiagram
         string password
         string email
     }
-
     Categoria {
         int id PK
         string nome
     }
-
     Localizacao {
         int id PK
         string sala
         string bloco
     }
-
     Patrimonio {
         int id PK
         string nome
@@ -61,8 +59,8 @@ erDiagram
     }
 
     Categoria ||--|{ Patrimonio : "possui"
-    Localizacao ||--|{ Patrimonio : "contém"
-    %% O usuário gerencia o patrimônio, mas no MVP atual não há FK direta (User rastreia sessão)
+    Localizacao ||--|{ Patrimonio : "contem"
+```
 
 ## Como Rodar o Projeto Localmente
 
