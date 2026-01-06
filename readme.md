@@ -19,7 +19,7 @@ Sistema desenvolvido em **Python** e **Django** para o gerenciamento de ativos p
 
 | Formulário de Cadastro | Confirmação de Exclusão | 
 | :---: | :---: |
-| ![Exclusão](screenshots/tela_exclusao.png) | ![Cadastro](screenshots/tela_cadastro.png) |
+| ![Cadastro](screenshots/tela_cadastro.png) | ![Exclusão](screenshots/tela_exclusao.png) |
 
 
 ## Tecnologias Utilizadas
