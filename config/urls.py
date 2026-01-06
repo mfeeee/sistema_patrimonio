@@ -16,10 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core.views import lista_patrimonio, novo_patrimonio
+from core.views import lista_patrimonio, novo_patrimonio, editar_patrimonio, deletar_patrimonio
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', lista_patrimonio, name='lista_patrimonio'),
     path('novo/', novo_patrimonio, name='novo_patrimonio'),
+    path('editar/<int:id>/', editar_patrimonio, name='editar_patrimonio'), 
+    path('deletar/<int:id>/', deletar_patrimonio, name='deletar_patrimonio'),
 ]
