@@ -17,8 +17,8 @@ Sistema desenvolvido em **Python** e **Django** para o gerenciamento de ativos p
 | :---: | :---: |
 | ![Home](screenshots/tela_index.png) | ![Cadastro](screenshots/tela_cadastro.png) |
 
-| Confirmação de Exclusão | |
-| :---: | :---: |
+| Confirmação de Exclusão | 
+| :---: | 
 | ![Exclusão](screenshots/tela_exclusao.png) |
 
 ## Tecnologias Utilizadas
