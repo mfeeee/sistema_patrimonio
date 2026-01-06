@@ -9,6 +9,20 @@
     <nav class="navbar navbar-dark bg-primary mb-4">
         <div class="container">
             <a class="navbar-brand" href="/">Sistema de Patrimônio</a>
+
+            <div class="d-flex">
+                {% if user.is_authenticated %}
+                    <span class="navbar-text me-3 text-white">
+                        Olá, {{ user.username }}
+                    </span>
+                    <form action="{% url 'logout' %}" method="post">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-sm btn-outline-light">Sair</button>
+                    </form>
+                {% else %}
+                    <a href="{% url 'login' %}" class="btn btn-sm btn-light">Entrar</a>
+                {% endif %}
+            </div>
         </div>
     </nav>
 
