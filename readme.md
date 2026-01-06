@@ -1,6 +1,6 @@
 # Sistema de Controle de Patrimônio (MVP)
 
-Sistema desenvolvido em **Python** e **Django** para o gerenciamento de ativos patrimoniais. O projeto permite o cadastro, rastreamento de localização, categorização e controle do estado de conservação de bens (tombamento).
+Sistema desenvolvido em **Python** e **Django** para o gerenciamento de ativos patrimoniais, trabalho acadêmico da matéria de Desenvolvimento Web 2. O projeto permite o cadastro, rastreamento de localização, categorização e controle do estado de conservação de bens (tombamento). 
 
 ## Funcionalidades
 
