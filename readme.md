@@ -11,11 +11,15 @@ Sistema desenvolvido em **Python** e **Django** para o gerenciamento de ativos p
 - **Data Seeder:** Script automatizado para povoar o banco de dados com dados fictícios para testes.
 - **Painel Administrativo:** Gestão de Categorias e Localizações via Django Admin.
 
-![Tela Inicial](screenshots/tela_index.png)
+### Galeria do Projeto
 
-![Tela Formulario](screenshots/tela_cadastro.png)
+| Tela Inicial | Formulário de Cadastro |
+| :---: | :---: |
+| ![Home](screenshots/tela_index.png) | ![Cadastro](screenshots/tela_cadastro.png) |
 
-![Tela Exclusão](screenshots/tela_exclusao.png)
+| Confirmação de Exclusão | |
+| :---: | :---: |
+| ![Exclusão](screenshots/tela_exclusao.png) | *Interface responsiva com Bootstrap* |
 
 ## Tecnologias Utilizadas
 
