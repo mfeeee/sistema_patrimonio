@@ -19,7 +19,7 @@ Sistema desenvolvido em **Python** e **Django** para o gerenciamento de ativos p
 
 | Confirmação de Exclusão | |
 | :---: | :---: |
-| ![Exclusão](screenshots/tela_exclusao.png) | *Interface responsiva com Bootstrap* |
+| ![Exclusão](screenshots/tela_exclusao.png) |
 
 ## Tecnologias Utilizadas
 
