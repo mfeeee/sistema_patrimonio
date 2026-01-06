@@ -1,9 +1,11 @@
 from django.shortcuts import render, get_object_or_404
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from .models import Patrimonio
 from .forms import PatrimonioForm
 
 # Create your views here.
+@login_required
 def lista_patrimonio(request):
     busca = request.GET.get('q')
     filtro_estado = request.GET.get('estado')
@@ -26,6 +28,7 @@ def lista_patrimonio(request):
 
     return render(request, 'core/lista.html', context)
 
+@login_required
 def novo_patrimonio(request):
     form = PatrimonioForm(request.POST or None)
     if form.is_valid():
@@ -33,6 +36,7 @@ def novo_patrimonio(request):
         return redirect('lista_patrimonio')
     return render(request, 'core/form.html', {'form': form})
 
+@login_required
 def editar_patrimonio(request, id):
     patrimonio = get_object_or_404(Patrimonio, pk=id)
     form = PatrimonioForm(request.POST or None, instance=patrimonio)
@@ -43,6 +47,7 @@ def editar_patrimonio(request, id):
         
     return render(request, 'core/form.html', {'form': form})
 
+@login_required
 def deletar_patrimonio(request, id):
     patrimonio = get_object_or_404(Patrimonio, pk=id)
     
