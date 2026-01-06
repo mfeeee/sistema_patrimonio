@@ -16,6 +16,7 @@ Sistema desenvolvido em **Python** e **Django** para o gerenciamento de ativos p
 | Tela Inicial | 
 | :---: | 
 | ![Home](screenshots/tela_index.png) | 
+
 | Formulário de Cadastro | Confirmação de Exclusão | 
 | :---: | :---: |
 | ![Exclusão](screenshots/tela_exclusao.png) | ![Cadastro](screenshots/tela_cadastro.png) |
