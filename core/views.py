@@ -32,6 +32,8 @@ def lista_patrimonio(request):
 def novo_patrimonio(request):
     form = PatrimonioForm(request.POST or None)
     if form.is_valid():
+        patrimonio = form.save(commit=False)
+        patrimonio.usuario_cadastro = request.user
         form.save()
         return redirect('lista_patrimonio')
     return render(request, 'core/form.html', {'form': form})
