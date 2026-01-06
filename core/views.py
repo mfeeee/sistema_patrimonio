@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
 from .models import Patrimonio
 from .forms import PatrimonioForm
@@ -32,3 +32,22 @@ def novo_patrimonio(request):
         form.save()
         return redirect('lista_patrimonio')
     return render(request, 'core/form.html', {'form': form})
+
+def editar_patrimonio(request, id):
+    patrimonio = get_object_or_404(Patrimonio, pk=id)
+    form = PatrimonioForm(request.POST or None, instance=patrimonio)
+    
+    if form.is_valid():
+        form.save()
+        return redirect('lista_patrimonio')
+        
+    return render(request, 'core/form.html', {'form': form})
+
+def deletar_patrimonio(request, id):
+    patrimonio = get_object_or_404(Patrimonio, pk=id)
+    
+    if request.method == 'POST':
+        patrimonio.delete()
+        return redirect('lista_patrimonio')
+        
+    return render(request, 'core/confirmar_exclusao.html', {'patrimonio': patrimonio})
