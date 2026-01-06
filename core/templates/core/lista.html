@@ -55,7 +55,16 @@
                             {{ item.get_estado_display }}
                         </span>
                     </td>
-                    <td><button class="btn btn-sm btn-outline-primary">Editar</button></td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a href="{% url 'editar_patrimonio' item.id %}" class="btn btn-sm btn-outline-primary">
+                                Editar
+                            </a>
+                            <a href="{% url 'deletar_patrimonio' item.id %}" class="btn btn-sm btn-outline-danger">
+                                Excluir
+                            </a>
+                        </div>
+                    </td>
                 </tr>
                 {% empty %}
                 <tr>
