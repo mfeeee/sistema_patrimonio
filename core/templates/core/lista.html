@@ -25,7 +25,7 @@
                     <td>{{ item.nome }}</td>
                     <td>{{ item.localizacao }}</td>
                     <td>
-                        <span class="badge bg-{% if item.estado == 'bom' %}success{% else %}warning{% endif %}">
+                        <span class="badge bg-{% if item.estado == 'bom' %}success{% elif item.estado == 'manutencao' %}warning{% else %}danger{% endif %}">
                             {{ item.get_estado_display }}
                         </span>
                     </td>
