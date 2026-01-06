@@ -28,6 +28,42 @@ Sistema desenvolvido em **Python** e **Django** para o gerenciamento de ativos p
 - **Frontend:** HTML5, CSS3, Bootstrap 5 (CDN)
 - **Banco de Dados:** SQLite
 
+## DER
+erDiagram
+    User {
+        int id PK
+        string username
+        string password
+        string email
+    }
+
+    Categoria {
+        int id PK
+        string nome
+    }
+
+    Localizacao {
+        int id PK
+        string sala
+        string bloco
+    }
+
+    Patrimonio {
+        int id PK
+        string nome
+        string numero_tombamento UK
+        date data_aquisicao
+        decimal valor
+        string estado
+        text observacao
+        int categoria_id FK
+        int localizacao_id FK
+    }
+
+    Categoria ||--|{ Patrimonio : "possui"
+    Localizacao ||--|{ Patrimonio : "contém"
+    %% O usuário gerencia o patrimônio, mas no MVP atual não há FK direta (User rastreia sessão)
+
 ## Como Rodar o Projeto Localmente
 
 Siga os passos abaixo para configurar o ambiente de desenvolvimento.
