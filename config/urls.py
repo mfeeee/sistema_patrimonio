@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from core.views import lista_patrimonio, novo_patrimonio, editar_patrimonio, deletar_patrimonio
+from usuarios.views import registrar_usuario
 
 urlpatterns = [
     path('admin/', admin.site.urls),
